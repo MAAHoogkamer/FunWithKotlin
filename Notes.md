@@ -247,10 +247,12 @@ To directly use a class method without creating a class instance.<br>
 Companion object is static and only has access to itself.<br>
 Preferable is to use it through a class instance though for re-usability.<br>
 </details>
-
-Project specific business logic (function code) like classes are put in the main of packages. <br>
-Tests are put in the test folder of the package.<br>
+<details>
+  <summary>Packages and testing</summary>
+Project specific business logic (function code) like classes are put in the `main` of packages. <br>
+Tests are put in the `test` folder of the package.<br>
 Main and test use the same hierarchy.<br>
 
 assertEquals(expected = false, actual = isAPangram) explicit
 assertEquals(false, isAPangram) inexplicit
+</details>
