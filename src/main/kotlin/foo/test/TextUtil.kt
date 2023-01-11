@@ -10,6 +10,15 @@ class TextUtil {
         }
         return true
     }
+    /*
+    fun addToArray() {
+        println("Please enter the text to check.")
+        val input = readLine()
+        if (input != null) {
+            sentences.add(input)
+        }
+    }
+    */
 
     companion object {
         const val ALPHABET = "abcdefghijklmnopqrstuvwxyz"

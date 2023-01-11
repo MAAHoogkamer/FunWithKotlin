@@ -1,3 +1,5 @@
+import foo.test.TextUtil
+
 fun main() {
     val sentences = arrayOf(
         "Is it a Pangram? Please enter a text to check.",

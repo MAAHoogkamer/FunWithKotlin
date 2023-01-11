@@ -56,6 +56,10 @@ var notePlayed: String // declaration
 notePlayed = "B" // initialization 
 ``` 
 
+`var textEntries: Int?` declares an empty variable called textEntries that can hold an Int value or null.<br>
+The ? at the end of the type (Int?) makes the variable nullable.<br> 
+This means that it's possible to assign null to it, as well as any valid Int value.<br>
+
 </details>
 <details>
   <summary>Declaring a Immutable Variable (val)</summary>

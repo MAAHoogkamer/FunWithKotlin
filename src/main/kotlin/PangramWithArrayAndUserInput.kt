@@ -1,11 +1,20 @@
-package foo.test
+import foo.test.TextUtil
+
 fun main() {
     println("How many texts would you like to check?")
-    val textEntries = readLine()
-    val textEntries1 = textEntries?.toInt()
+    var textEntries: Int? // Initializes a variable which can contain Int or Null(=?)
+    val textEntriesInput = readLine()
+    textEntries= textEntriesInput?.toIntOrNull() // Sets textEntries to Int when Int, otherwise to Null
+
+    if (textEntries == null) { // Can't do if (!textEntries) in Kotlin
+        println("Please enter a number (integer).")
+        val newInput = readLine()
+        textEntries = newInput?.toIntOrNull()
+
+    }
     val sentences = arrayListOf<String>()
-    for (i in 0 until textEntries1!!) {
-        println("Please enter the text to check.")
+    for (i in 1 until textEntries!!+1) {
+        println("Please enter text number $i.")
         val input = readLine()
         if (input != null) {
             sentences.add(input)
