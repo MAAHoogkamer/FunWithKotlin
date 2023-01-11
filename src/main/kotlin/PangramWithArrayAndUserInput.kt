@@ -13,25 +13,21 @@ fun main() {
 
     }
     val sentences = arrayListOf<String>()
-    for (i in 1 until textEntries!!+1) {
+    for (i in 1 until textEntries!!+1) { // !! is null-safety operator, forces the variable to be non-null
         println("Please enter text number $i.")
         val input = readLine()
         if (input != null) {
             sentences.add(input)
         }
     }
-
-    val textUtil = TextUtil()
+    val textUtil = TextUtil() // Creates instance of class TextUtil
 
     for (sentence in sentences) { // For every value in the array...
 
         val isAPangram = textUtil.isPangram(sentence)
-
-        if (isAPangram) {
-            println("\"$sentence\" is a Pangram")
-        } else {
-            println("\"$sentence\" is not a Pangram")
-        }
+        textUtil.isPangramResult(sentence, isAPangram)
+        // Yes, isPangram and isPangramResult could be merged.
+        // But I wanted to try this out.
     }
 }
 

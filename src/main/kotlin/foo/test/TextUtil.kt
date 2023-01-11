@@ -10,15 +10,15 @@ class TextUtil {
         }
         return true
     }
-    /*
-    fun addToArray() {
-        println("Please enter the text to check.")
-        val input = readLine()
-        if (input != null) {
-            sentences.add(input)
+
+    fun isPangramResult(sentence: String, isAPangram: Boolean) {
+        // With multiple parameter inputs, you have to name them. (a: Int b: String)
+        if (isAPangram) {
+            println("\"$sentence\" is a Pangram")
+        } else {
+            println("\"$sentence\" is not a Pangram")
         }
     }
-    */
 
     companion object {
         const val ALPHABET = "abcdefghijklmnopqrstuvwxyz"
