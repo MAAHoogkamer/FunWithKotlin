@@ -10,7 +10,8 @@ class TextUtil {
         }
         return true
     }
-
+    // Yes, isPangram and isPangramResult could be merged.
+    // But I wanted to try this out.
     fun isPangramResult(sentence: String, isAPangram: Boolean) {
         // With multiple parameter inputs, you have to name them. (a: Int b: String)
         if (isAPangram) {

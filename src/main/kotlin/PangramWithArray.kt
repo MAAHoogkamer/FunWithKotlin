@@ -10,11 +10,7 @@ fun main() {
     for (sentence in sentences) { // For every value in the array...
 
         val isAPangram = textUtil.isPangram(sentence)
+        textUtil.isPangramResult(sentence, isAPangram)
 
-        if (isAPangram) {
-            println("\"$sentence\" is a Pangram")
-        } else {
-            println("\"$sentence\" is not a Pangram")
-        }
     }
 }
