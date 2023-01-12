@@ -9,8 +9,8 @@ fun main() {
 `main` = required name of starting function<br>
 `Semicolon ;` is not used at the end of the line.
 
-When program is run, compiler translates Kotlin code into code that can be read by JVM (Java Virtaul Machine) which executes it.
-
+When program is run, compiler translates Kotlin code into 
+code that can be read by JVM (Java Virtaul Machine) which executes it.<br>
 
 <details>
   <summary>Functions and such</summary>
@@ -21,7 +21,18 @@ When program is run, compiler translates Kotlin code into code that can be read 
 `print()`  prints without creating new line <br>
 `print("${typeTest::class.simpleName}")` check the type of a variable <br>
 `readLine()` to tell the program to pause until some type of input is given by the user
-
+<br>
+A function can take parameters as such:
+```
+fun isPangramResult(sentence: String, isAPangram: Boolean) {
+        // With multiple parameter inputs, you have to name them. (a: Int b: String)
+        if (isAPangram) {
+            println("\"$sentence\" is a Pangram")
+        } else {
+            println("\"$sentence\" is not a Pangram")
+        }
+    }
+```
 </details>
 <details>
   <summary>Errors</summary>

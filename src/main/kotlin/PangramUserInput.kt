@@ -1,4 +1,4 @@
-fun main2() {
+fun main() {
     println("Is it a Pangram? \nPlease enter a text to check.")
     val textToCheck = readLine()!!.lowercase()
     val alphabet = "abcdefghijklmnopqrstuvwxyz"
