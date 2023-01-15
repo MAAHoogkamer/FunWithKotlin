@@ -1,17 +1,16 @@
 package foo.test
 
 class ModList {
-    fun flattenList(list: List<List<Any>>): List<Any> {
-        return list.flatten()
+    fun flattenList(input: List<*>): List<Any?> {
+        val result = input.flatMap {
+            if (it is Iterable<*>) it.filterNotNull() else listOf(it)
+        }
+        return result
     }
-
-    //fun flattenList(input: List<*>): List<Any?> {
-        //return input.flatten()
-        // Kotlin needs type declaration, * is for unknown input type
-        // Return type changed from Array to List<Any>, while flatten() returns List
-        // Any is the supertype of all types in Kotlin, it can hold Any datatype
-        // flatten() only works with Collections like List.
-
-    //}
-
+    /*
+    The flatMap function iterates through the list and applies a lambda function to each element.
+    The lambda function checks if the current element is an Iterable. If so,
+    it filters the null values and flattens it, otherwise it wraps the element in a list.
+    It then concatenates the results to produce a flattened list.
+     */
 }
