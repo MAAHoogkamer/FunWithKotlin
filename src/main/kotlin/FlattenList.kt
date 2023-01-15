@@ -6,8 +6,5 @@ fun main() {
 
         val flattenedList = modList.flattenList(nestedList)
 
-
-
-
         println(flattenedList)
 }
