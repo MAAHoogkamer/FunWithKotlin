@@ -7,6 +7,11 @@ class ModList {
         }
         return result
     }
+
+    fun flattenListRecursive(input: List<*>): List<Int> {
+        // TODO
+        // use Recursion, loops, functions - flattenListRecursive()
+    }
     /*
     The flatMap function iterates through the list and applies a lambda function to each element.
     The lambda function checks if the current element is an Iterable*. If so,
