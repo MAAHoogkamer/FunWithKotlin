@@ -13,7 +13,7 @@ fun main() {
     )
     val modList = ModList()
 
-    println(modList.flattenList(nestedList))
+    println(modList.flattenListRecursive(nestedList))
 
     // expected: [1, 2, 6, 7, 8, 2, 3, 5, 3]
     // task extended: 3b)
