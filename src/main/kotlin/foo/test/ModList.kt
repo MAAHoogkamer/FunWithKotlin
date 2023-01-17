@@ -8,7 +8,7 @@ class ModList {
         }
         return result
     }
-    var newList: MutableList<Int> = mutableListOf() // Variable needs to be outside of function scope, otherwise
+    var resultList: MutableList<Int> = mutableListOf() // Variable needs to be outside of function scope, otherwise
     // using it in a recursion doesn't work. List is immutable.
     fun flattenListRecursive(input: List<*>): List<Int> {
         // TODO
@@ -18,12 +18,12 @@ class ModList {
         // on this element.
         for (element in input) {
             if (element is Int) {
-                newList.add(element)
+                resultList.add(element)
             } else if (element is List<*>) {
                 flattenListRecursive(element)
             }
         }
-        return newList
+        return resultList
 
     }
     /*
