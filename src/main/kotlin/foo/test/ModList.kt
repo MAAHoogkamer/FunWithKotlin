@@ -9,20 +9,17 @@ class ModList {
         return result
     }
     var newList: MutableList<Int> = mutableListOf() // Variable needs to be outside of function scope, otherwise
-    // using it in a recursion doesn't work.
+    // using it in a recursion doesn't work. List is immutable.
     fun flattenListRecursive(input: List<*>): List<Int> {
         // TODO
         // use Recursion, loops, functions - flattenListRecursive()
 
         // Idea: Use for loop to iterate through List, if the element is another list, call itself (the function)
         // on this element.
-        println(input)
-
         for (element in input) {
             if (element is Int) {
                 newList.add(element)
             } else if (element is List<*>) {
-                //println(element + " = List")
                 flattenListRecursive(element)
             }
         }
