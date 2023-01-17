@@ -20,7 +20,3 @@ H
 src/main/kotlin/Hello.kt,e/3/e30d8e81980c204ce32444753966bf8cfe41c287
 X
 (src/test/kotlin/foo/test/TextUtilTest.kt,9/a/9a70a9312f4f30f71573a7fcb40789c2608aa4d3
-O
-src/main/kotlin/FlattenArray.kt,5/3/532fd730616d6e2d304cb4757d85dbe9a35fb04f
-T
-$src/main/kotlin/foo/test/ModArray.kt,d/a/da86d477d2b2fd48fbc6fb93350854a95cfaf24b
